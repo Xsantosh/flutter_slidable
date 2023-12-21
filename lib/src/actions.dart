@@ -25,7 +25,6 @@ class CustomSlidableAction extends StatelessWidget {
     this.autoClose = _kAutoClose,
     this.borderRadius = BorderRadius.zero,
     this.padding,
-    this.textStyle,
     required this.onPressed,
     required this.child,
   })  : assert(flex > 0),
@@ -40,7 +39,6 @@ class CustomSlidableAction extends StatelessWidget {
   /// {@endtemplate}
   final int flex;
 
-  final TextStyle? textStyle,
 
   /// {@template slidable.actions.backgroundColor}
   /// The background color of this action.
@@ -145,6 +143,7 @@ class SlidableAction extends StatelessWidget {
     this.label,
     this.borderRadius = BorderRadius.zero,
     this.padding,
+    this.textStyle,
   })  : assert(flex > 0),
         assert(icon != null || label != null),
         super(key: key);
@@ -152,6 +151,9 @@ class SlidableAction extends StatelessWidget {
   /// {@macro slidable.actions.flex}
   final int flex;
 
+   
+  final TextStyle? textStyle;
+  
   /// {@macro slidable.actions.backgroundColor}
   final Color backgroundColor;
 
