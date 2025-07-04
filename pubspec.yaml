@@ -16,5 +16,3 @@ dev_dependencies:
     sdk: flutter
   mocktail: ^0.3.0
   collection:
-
-flutter:
